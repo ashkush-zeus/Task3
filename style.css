@@ -1,0 +1,39 @@
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 5px;
+}
+
+.container > div {
+    text-align: center;
+    font-size: 35px;
+    padding: 25px 0px;
+    border: 1px solid rgba(89, 17, 234, 0.783);
+    font-weight: bold;
+    color: white;
+}
+
+.header, .footer {
+    grid-column: 1 / -1;
+    height: 100px;
+    line-height: 100px;
+    background-image: linear-gradient(rgba(89, 17, 234, 0.783), rgb(156, 86, 214));
+}
+
+.sidebar {
+    grid-row: 2 / span-2;
+    line-height: 600px;
+    background-image: linear-gradient(to bottom, rgb(128, 205, 240), rgb(74, 156, 194));
+}
+
+.content1 {
+    grid-column: 2 / -1;
+}
+
+.content1, .content2, .content3 {
+    background-image: linear-gradient(to bottom right, rgba(89, 17, 234, 0.783), rgb(67, 182, 235));
+    height: 300px;
+    line-height: 300px;
+}
